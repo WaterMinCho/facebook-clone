@@ -1,3 +1,86 @@
+.header {
+  padding: 15px 20px; /*위아래15px, 좌우20px 자식요소 공간 남기기*/
+  display: flex; /*header의 자식 요소들은 기본 width만큼만 자리를 차지하므로 우측 공간은 남게된다. */
+  justify-content: space-between; /* 가로축-중심축 자식 요소들의 가로 축을 기준으로 좌우에 대한 정렬을 관장. --> 사이에 동일한 간격. */
+
+  position: sticky;
+  background-color: white;
+  z-index: 100;
+  top: 0;
+  box-shadow: 0px 5px 9px -9px black;
+}
+
+.header__left {
+  display: flex;
+  justify-self: space-evenly;
+}
+
+.header__input {
+  display: flex;
+  align-items: center; /*세로축-교차축. 컨테이너 세로축의 중앙으로 정렬.*/
+  background-color: #eff2f5;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 999px;
+}
+
 .header__left > img {
   height: 40px;
+}
+
+.header__input > input {
+  border: none;
+  background-color: transparent; /*부모요소의 색으로 같게 변환.*/
+  outline-width: 0;
+}
+.header__input > input::placeholder {
+  color: rgb(116, 110, 110);
+  font-size: auto;
+}
+.header__middle {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.header__option > .MuiSvgIcon-root {
+  /*material UI내의 ButtonIcon 속성은 .MuiSvgIcon-root에 담겨있다..*/
+  color: gray;
+}
+.header__option:hover > .MuiSvgIcon-root {
+  color: #2477ec;
+}
+.header__option--active > .MuiSvgIcon-root {
+  /*선택됐을 때 컬러 잡아주기.*/
+  color: #2477ec;
+}
+.header__option--active {
+  /*선택됐을 때 border-bottom 잡아주기.*/
+  border-bottom: 4px solid #2477ec;
+}
+
+.header__option {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+.header__option:hover {
+  background-color: #eff2f5;
+  border-radius: 10px;
+  align-items: center;
+  padding: 0 30px;
+  border-bottom: none;
+}
+
+.header__info {
+  display: flex;
+  align-items: center;
+}
+
+.header__info > h4 {
+  margin-left: 10px;
+}
+.header__right {
+  display: flex;
 }

@@ -6,7 +6,11 @@ import FlagIcon from "@material-ui/icons/Flag";
 import SubscriptionsOutlinedIcon from "@material-ui/icons/SubscriptionsOutlined";
 import StorefrontOutlinedIcon from "@material-ui/icons/StorefrontOutlined";
 import SupervisedUserCircleIcon from "@material-ui/icons/SupervisedUserCircle";
-import { Avatar } from "@material-ui/core";
+import { Avatar, IconButton } from "@material-ui/core";
+import AddIcon from "@material-ui/icons/Add";
+import ForumIcon from "@material-ui/icons/Forum";
+import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 function header() {
   return (
@@ -19,13 +23,16 @@ function header() {
         />
         <div className="header__input">
           <SearchIcon />
-          <input type="text" />
+          <input type="text" placeholder="Facebook 검색" />
         </div>
       </div>
 
-      {/*menu 아이콘 5개*/}
+      {/*middle 아이콘 5개*/}
       <div className="header__middle">
-        <div className="header__option">
+        <div
+          className="header__option 
+        header__option--active"
+        >
           <HomeIcon fontSize="large" />
         </div>
         <div className="header__option">
@@ -48,8 +55,18 @@ function header() {
           <Avatar />
           <h4>MinCho</h4>
         </div>
+        {/*IconButton 객체를 가져왔고, 그 객체 내의 아이콘들은 클릭효과를 넘겨줌.*/}
         <IconButton>
           <AddIcon />
+        </IconButton>
+        <IconButton>
+          <ForumIcon />
+        </IconButton>
+        <IconButton>
+          <NotificationsActiveIcon />
+        </IconButton>
+        <IconButton>
+          <ExpandMoreIcon />
         </IconButton>
       </div>
     </div>
