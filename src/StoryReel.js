@@ -17,7 +17,7 @@ function StoryReel() {
       />
       <Story
         image="https://upload.wikimedia.org/wikipedia/commons/7/7d/IU_MelOn_Music_Awards_2017_06.jpg"
-        profileSrc="https://lh3.googleusercontent.com/proxy/mccNmil7x8RygUlU21YPedG_mk8g6heVITYRAllDsdu8L7Eh1Y-ylFbAJRuusPxmXEW00g0s1Sv7zzpjKxEElndZxM09pHVmByIkhzgBAYgATd2lrX_8gTOJpkY-NTokkg3lAW5PKw3KzE6GpGmpADNyMQC2NKaMlWNwlbVncvvnUchrxVDD"
+        profileSrc="https://img4.yna.co.kr/photo/cms/2019/05/02/02/PCM20190502000402370_P2.jpg"
         title="IU"
       />
       <Story
