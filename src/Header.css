@@ -39,8 +39,9 @@
 }
 .header__middle {
   display: flex;
+  padding: 0 30px;
   flex: 1;
-  justify-content: center;
+  justify-content: space-between;
 }
 .header__option > .MuiSvgIcon-root {
   /*material UI내의 ButtonIcon 속성은 .MuiSvgIcon-root에 담겨있다..*/
